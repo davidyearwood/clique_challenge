@@ -1,0 +1,29 @@
+/* Logo */
+h1.logo {
+    margin: 0;
+}
+
+.logo {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 150px;
+    height: 150px;
+}
+
+.logo--bg-orange {
+    background: #f88601;
+}
+
+.logo__img-container {
+    text-align: center;
+}
+
+.logo__img {
+    width: 65%; 
+}
+
+

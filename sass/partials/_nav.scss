@@ -1,0 +1,23 @@
+// Nav Links
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    font-family: $sans-serif; 
+    font-weight: bold; 
+    &__item>a {
+        border-bottom: 3px solid transparent; 
+        display: inline-block; 
+        font-family: inherit; 
+        padding-bottom: 16px; 
+        padding-top: 16px; 
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            border-bottom: 3px solid $clique-primary-color; 
+
+        }
+    }
+
+}
+

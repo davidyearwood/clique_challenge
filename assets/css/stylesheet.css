@@ -19,4 +19,22 @@
     .nav-links__item > a:hover {
       border-bottom: 3px solid #f88601; }
 
+h1.logo {
+  margin: 0; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px; }
+  .logo__img {
+    width: 100px;
+    height: auto; }
+  .logo--bg-tangerine {
+    background: #f88601; }
+
 /*# sourceMappingURL=stylesheet.css.map */

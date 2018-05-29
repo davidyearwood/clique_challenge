@@ -2,6 +2,20 @@
 $serif:                                     'Crimson Text', serif; 
 $sans-serif:                                'Brandon Grotesque', sans-serif; 
 
+$crimson-text: 'Crimson Text', serif; 
+$brandon: (
+    thin: 'Brandon Thin',
+    light:   'Brandon Light',
+    regular: 'Brandon', 
+    semibold: 'Brandon Medium',
+    bold:    'Brandon Bold', 
+  black: 'Brandon Black',
+    thin-italic: 'Brandon Thin Italic', 
+    semibold-italic: 'Brandon Medium Italic',
+    bold-italic: 'Brandon Bold Italic', 
+    black-italic: 'Brandon Black Italic'
+);
+
 // Colors 
 $clique-primary-color:                       #f88601; 
 $tangerine:                                 #f88601; 

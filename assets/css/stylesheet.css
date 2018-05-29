@@ -1,21 +1,136 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Brandon"; }
+
+p {
+  font-family: "Crimson Text", serif; }
+
+@font-face {
+  font-family: "Brandon Bold";
+  src: url("../fonts/Brandon_bld.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Bold Italic";
+  src: url("../fonts/Brandon_bld_it.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Black Italic";
+  src: url("../fonts/Brandon_blk_it.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Black";
+  src: url("../fonts/Brandon_blk.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Light";
+  src: url("../fonts/Brandon_light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Light Italic";
+  src: url("../fonts/Brandon_light_it.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Medium";
+  src: url("../fonts/Brandon_med.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Medium Italic";
+  src: url("../fonts/Brandon_med_it.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
   font-family: "Brandon";
-  src: url(../fonts/Brandon_reg.otf) format("otf");
-  font-weight: 400; }
+  src: url("../fonts/Brandon_reg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Italic";
+  src: url("../fonts/Brandon_reg_it.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Thin";
+  src: url("../fonts/Brandon_thin.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Brandon Thin Italic";
+  src: url("../fonts/Brandon_thin_it.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+.highlight-text {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  padding: 15px; }
+
+.display-text--bg-serif {
+  color: #fff;
+  font-weight: 400;
+  font-family: "Crimson Text", serif;
+  font-size: 4em;
+  line-height: 1.35em; }
+
+.display-text--md-sans {
+  font-family: "Brandon Medium";
+  font-size: 39px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.container {
+  max-width: 1060px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.banner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 40px; }
+  .banner__header {
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap; }
+  .banner--building-img {
+    background: gray; }
+
+nav {
+  flex-basis: 100%;
+  align-self: center; }
+
 .nav-links {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
-  font-family: "Brandon Grotesque", sans-serif;
-  font-weight: bold; }
+  font-family: "Brandon Medium";
+  padding-left: 0;
+  color: #fff;
+  margin: 0;
+  width: 100%;
+  align-items: center; }
+  .nav-links__item {
+    font-size: 14px;
+    margin-left: 5%; }
+  .nav-links__item:first-child {
+    margin-left: 0; }
   .nav-links__item > a {
+    font-size: inherit;
+    color: inherit;
     border-bottom: 3px solid transparent;
     display: inline-block;
     font-family: inherit;
     padding-bottom: 16px;
     padding-top: 16px;
     text-transform: uppercase;
-    text-decoration: none; }
+    text-decoration: none;
+    letter-spacing: 1px; }
     .nav-links__item > a:hover {
       border-bottom: 3px solid #f88601; }
 
@@ -36,5 +151,48 @@ h1.logo {
     height: auto; }
   .logo--bg-tangerine {
     background: #f88601; }
+
+.build-something {
+  font-family: "Brandon Grotesque", sans-serif;
+  color: #fff; }
+  .build-something h2 {
+    color: inherit;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: 400;
+    border-bottom: 3px solid #fff;
+    text-transform: uppercase; }
+
+.btn, .btn--tangerine {
+  border: 1px solid #fff;
+  padding: 15px 25px;
+  border-radius: 3px; }
+
+.btn--next-section {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em; }
+
+.phone-link {
+  font-family: "Crimson Text", serif;
+  margin-left: auto;
+  color: #fff; }
+  .phone-link a {
+    font-family: inherit;
+    text-decoration: none; }
+
+.btn, .btn--tangerine {
+  border: 1px solid #fff;
+  border-radius: 3px; }
+
+.btn--tangerine {
+  border: 1px solid #f88601; }
+
+.btn--next {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em; }
 
 /*# sourceMappingURL=stylesheet.css.map */

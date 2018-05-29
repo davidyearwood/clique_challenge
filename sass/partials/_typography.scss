@@ -2,8 +2,71 @@
 // Typography
 // =============================================================================
 
-@font-face {
-    font-family: "Brandon"; 
-    src: url(../fonts/Brandon_reg.otf) format("otf");
-    font-weight: 400; 
+h1, 
+h2, 
+h3, 
+h4 {
+    font-family: map-get($brandon , regular)
 }
+
+p {
+    font-family: $crimson-text; 
+}
+
+$fonts: (
+    (name: "Brandon Bold", src: "../fonts/Brandon_bld.otf", format: "opentype"), 
+    (name: "Brandon Bold Italic", src: "../fonts/Brandon_bld_it.otf", format: "opentype"), 
+    (name: "Brandon Black Italic", src: "../fonts/Brandon_blk_it.otf", format: "opentype"),
+    (name: "Brandon Black", src: "../fonts/Brandon_blk.otf", format: "opentype"),
+    (name: "Brandon Light", src: "../fonts/Brandon_light.otf", format: "opentype"),
+    (name: "Brandon Light Italic", src: "../fonts/Brandon_light_it.otf", format: "opentype"),
+    (name: "Brandon Medium", src: "../fonts/Brandon_med.otf", format: "opentype"),
+    (name: "Brandon Medium Italic", src: "../fonts/Brandon_med_it.otf", format: "opentype"),
+    (name: "Brandon", src: "../fonts/Brandon_reg.otf", format: "opentype"),
+    (name: "Brandon Italic", src: "../fonts/Brandon_reg_it.otf", format: "opentype"),
+    (name: "Brandon Thin", src: "../fonts/Brandon_thin.otf", format: "opentype"),
+    (name: "Brandon Thin Italic", src: "../fonts/Brandon_thin_it.otf", format: "opentype"),
+);
+
+@mixin create-font-face($font, $src, $format) {
+    @font-face {
+        font-family: $font; 
+        src: url($src) format($format); 
+        font-weight: normal; 
+        font-style: normal;
+    }
+} 
+
+@each $value in $fonts {
+    @include create-font-face(map-get($value, name), map-get($value, src), map-get($value, format)); 
+}
+
+@each $key, $value in $brandon {
+    %brandon--#{$key} {
+        font-family: $value, sans-serif; 
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+.highlight-text {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.display-text--bg-serif {
+    color: #fff;
+    font-weight: 400;
+    font-family: $crimson-text;
+    font-size: 4em;
+    line-height: 1.35em;
+}
+
+.display-text--md-sans {
+    font-family: map-get($brandon, semibold);
+    font-size: 39px; 
+    font-weight: 400;
+    text-transform: uppercase;
+}
+

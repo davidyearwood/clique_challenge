@@ -1,0 +1,22 @@
+h1.logo {
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+
+    &__img {
+        width: 100px; 
+        height: auto; 
+    }
+    &--bg-tangerine {
+        background: $tangerine; 
+    } 
+}

@@ -1,11 +1,29 @@
+nav {
+    flex-basis: 100%; 
+    align-self: center; 
+}
 // Nav Links
 .nav-links {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
-    font-family: $sans-serif; 
-    font-weight: bold; 
-    &__item>a {
+    font-family: map-get($brandon, semibold); 
+    padding-left: 0;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    &__item {
+        font-size: 14px;
+        margin-left: 5%;
+    }
+
+    &__item:first-child {
+        margin-left: 0;
+    }
+
+    &__item > a {
+        font-size: inherit;
+        color: inherit;
         border-bottom: 3px solid transparent; 
         display: inline-block; 
         font-family: inherit; 
@@ -13,6 +31,7 @@
         padding-top: 16px; 
         text-transform: uppercase;
         text-decoration: none;
+        letter-spacing: 1px; 
         &:hover {
             border-bottom: 3px solid $clique-primary-color; 
 

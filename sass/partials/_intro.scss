@@ -1,0 +1,24 @@
+.build-something {
+    font-family: $sans-serif;
+    color: #fff; 
+    h2 {
+        color: inherit;
+        display: inline-block;
+        padding-bottom: 10px;
+        font-weight: 400;
+        border-bottom: 3px solid #fff;
+        text-transform: uppercase;
+    }
+}
+
+.btn {
+    border: 1px solid #fff; 
+    padding: 15px 25px;
+    border-radius: 3px; 
+}
+.btn--next-section {
+    display: inline-block;
+    color: #fff; 
+    text-decoration: none;
+    font-size: 2em;
+}

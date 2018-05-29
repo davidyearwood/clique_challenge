@@ -73,7 +73,6 @@ p {
   padding: 15px; }
 
 .display-text--bg-serif {
-  color: #fff;
   font-weight: 400;
   font-family: "Crimson Text", serif;
   font-size: 4em;
@@ -152,6 +151,9 @@ h1.logo {
   .logo--bg-tangerine {
     background: #f88601; }
 
+.intro__about h2 {
+  color: #fff; }
+
 .build-something {
   font-family: "Brandon Grotesque", sans-serif;
   color: #fff; }
@@ -194,5 +196,24 @@ h1.logo {
   color: #fff;
   text-decoration: none;
   font-size: 2em; }
+
+.belief {
+  padding-top: 150px;
+  padding-bottom: 150px; }
+
+.belief__header {
+  border-left: 2px solid #f88601;
+  font-family: "Crimson Text", serif;
+  padding-left: 45px; }
+  .belief__header h2.belief__title,
+  .belief__header p {
+    font-family: inherit;
+    margin: 0; }
+  .belief__header h2.belief__title {
+    position: relative;
+    bottom: 15px; }
+  .belief__header p {
+    font-size: 20px;
+    color: #333; }
 
 /*# sourceMappingURL=stylesheet.css.map */

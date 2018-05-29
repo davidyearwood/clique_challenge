@@ -1,0 +1,20 @@
+.gallery {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item {
+        position: relative;
+        display: flex;
+        box-sizing: border-box;
+        flex-basis: calc(25% - 20px);
+        height: 250px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background: #333;
+        justify-content: center;
+        align-items: center;
+    }
+}

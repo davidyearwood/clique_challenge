@@ -69,3 +69,10 @@ $fonts: (
     text-transform: uppercase;
 }
 
+.display-text--lg-sans {
+    font-family: map-get($brandon, semibold);
+    font-size: 75px; 
+    font-weight: 400;
+    text-transform: uppercase;
+}
+

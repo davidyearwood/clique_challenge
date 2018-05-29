@@ -84,6 +84,12 @@ p {
   font-weight: 400;
   text-transform: uppercase; }
 
+.display-text--lg-sans {
+  font-family: "Brandon Medium";
+  font-size: 75px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
 .container {
   max-width: 1060px;
   width: 100%;
@@ -215,5 +221,97 @@ h1.logo {
   .belief__header p {
     font-size: 20px;
     color: #333; }
+
+.work-section {
+  color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.work__item {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+.work--bg-healthy {
+  background-color: #293D68;
+  background-image: url(../img/bg-healthy.jpg);
+  background-size: contain; }
+
+.work--bg-educational {
+  background-color: #A42436;
+  background-image: url(../img/bg-educational.jpg);
+  background-size: cover; }
+
+.work--bg-delicious {
+  background-color: #000;
+  background-image: url(../img/bg-delicious.jpg);
+  background-size: contain; }
+
+.work {
+  width: 45%; }
+  .work__title {
+    margin: 0;
+    margin-top: 30px;
+    font-family: "Brandon Bold"; }
+  .work__btn {
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-top: 45px;
+    font-family: "Brandon Medium";
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .work p {
+    margin: 0;
+    margin-top: 30px;
+    line-height: 1.45;
+    font-size: 20px;
+    font-weight: 300; }
+
+.sc--kendall-tablet {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  top: 300px;
+  right: 220px;
+  transform: rotate(-20deg); }
+  .sc--kendall-tablet img {
+    width: 100%; }
+
+.sc--kendall-mobile {
+  position: absolute;
+  width: 250px;
+  right: 0;
+  bottom: 50px;
+  transform: rotate(10deg); }
+  .sc--kendall-mobile img {
+    width: 100%; }
+
+.gallery {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .gallery__item {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    flex-basis: calc(25% - 20px);
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: #333;
+    justify-content: center;
+    align-items: center; }
+
+.contact {
+  display: flex;
+  justify-content: center; }
+  .contact h2 {
+    flex-basis: 100%; }
 
 /*# sourceMappingURL=stylesheet.css.map */

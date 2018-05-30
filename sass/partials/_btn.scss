@@ -14,3 +14,20 @@
     text-decoration: none; 
     font-size: 2em;  
 }
+
+.ghost-btn {
+    border-radius: 3px;
+    letter-spacing: 5px;
+    display: inline-block;
+    font-family: map-get($brandon, semibold);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 25px
+}
+
+.ghost-btn--tangerine {
+    color: $tangerine;
+    border: 1px solid #fff;
+    border: 1px solid $tangerine; 
+}

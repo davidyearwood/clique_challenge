@@ -1,8 +1,17 @@
 .contact {
+    padding-top: 100px;
+    padding-bottom: 100px; 
     display: flex; 
     justify-content: center;
-
+    flex-wrap: wrap;
     h2 {
+        margin: 0;
+        text-align: center; 
         flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .ghost-btn {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }

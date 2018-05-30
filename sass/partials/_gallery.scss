@@ -1,11 +1,12 @@
 .gallery {
     list-style-type: none;
     margin-top: 0;
-    padding: 0;
+    padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     &__item {
+        filter: grayscale(1);
         position: relative;
         display: flex;
         box-sizing: border-box;
@@ -16,5 +17,43 @@
         background: #333;
         justify-content: center;
         align-items: center;
+    }
+    &__img {
+        width: 150px;
+    }
+}
+
+[class^="gallery__item--bg"] {
+    background-size: 100%;
+}
+
+
+$gallery-items: (
+    'pic', 
+    'edelson', 
+    'smith', 
+    'riverline', 
+    'opinionlab', 
+    'dupage', 
+    'cubii', 
+    'cvs', 
+    'first-ib', 
+    'goshena', 
+    'special-olympics',
+    'delta'
+);
+
+@each $item in $gallery-items {
+    .gallery__item--bg-#{$item} {
+        background-image: url(../img/#{$item}-bg.jpg);
+    }
+}
+
+.gallery__item {
+    &--bg-smith {
+        background-image: url(../img/smith-bg.png);
+    }
+    &--bg-riverline {
+        background-image: url(../img/riverline-bg.png);
     }
 }

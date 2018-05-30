@@ -75,7 +75,7 @@ p {
 .display-text--bg-serif {
   font-weight: 400;
   font-family: "Crimson Text", serif;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1.35em; }
 
 .display-text--md-sans {
@@ -203,6 +203,21 @@ h1.logo {
   text-decoration: none;
   font-size: 2em; }
 
+.ghost-btn {
+  border-radius: 3px;
+  letter-spacing: 5px;
+  display: inline-block;
+  font-family: "Brandon Medium";
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 25px; }
+
+.ghost-btn--tangerine {
+  color: #f88601;
+  border: 1px solid #fff;
+  border: 1px solid #f88601; }
+
 .belief {
   padding-top: 150px;
   padding-bottom: 150px; }
@@ -222,35 +237,19 @@ h1.logo {
     font-size: 20px;
     color: #333; }
 
-.work-section {
+.work {
   color: #fff;
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 100%; }
-
-.work__item {
-  position: relative;
-  padding-top: 75px;
-  padding-bottom: 75px; }
-
-.work--bg-healthy {
-  background-color: #293D68;
-  background-image: url(../img/bg-healthy.jpg);
-  background-size: contain; }
-
-.work--bg-educational {
-  background-color: #A42436;
-  background-image: url(../img/bg-educational.jpg);
-  background-size: cover; }
-
-.work--bg-delicious {
-  background-color: #000;
-  background-image: url(../img/bg-delicious.jpg);
-  background-size: contain; }
-
-.work {
-  width: 45%; }
+  width: 100%;
+  overflow: hidden; }
+  .work__item {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px; }
   .work__title {
     margin: 0;
     margin-top: 30px;
@@ -263,7 +262,38 @@ h1.logo {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase; }
-  .work p {
+
+[class^="work__item--bg"] {
+  background-size: cover; }
+
+.work__item--bg-land-of-lincoln {
+  background-color: #293D68;
+  background-image: url(../img/bg-healthy.jpg); }
+.work__item--bg-kendall {
+  background-color: #A42436;
+  background-image: url(../img/bg-educational.jpg);
+  background-size: cover; }
+.work__item--bg-delicious {
+  background-color: #000;
+  background-image: url(../img/bg-delicious.jpg); }
+.work__item--bg-northwestern {
+  background: #553876;
+  background-image: url(../img/northwestern-law/nw-bg.jpg); }
+.work__item--bg-pritzker {
+  background-image: url(../img/pritzker/pritz-bg.jpg);
+  background-size: cover; }
+.work__item--bg-roche {
+  background-image: url(../img/roche/roche-bg.jpg); }
+.work__item--bg-paylocity {
+  background-image: url(../img/paylocity/paylocity-bg.jpg); }
+.work__item--bg-american-bar {
+  background-image: url(../img/american-bar/bg-american-bar.jpg); }
+.work__item--bg-authe {
+  background-image: url(../img/authe/authe-bg.jpg); }
+
+.work__info {
+  width: 45%; }
+  .work__info p {
     margin: 0;
     margin-top: 30px;
     line-height: 1.45;
@@ -289,14 +319,65 @@ h1.logo {
   .sc--kendall-mobile img {
     width: 100%; }
 
+.land-of-lincoln-laptop {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: -37px;
+  right: -189px; }
+  .land-of-lincoln-laptop img {
+    max-width: 1000px;
+    width: 100%; }
+
+.nw-mobile-site {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 50%;
+  top: 50px;
+  right: -92px; }
+  .nw-mobile-site__img {
+    position: absolute;
+    max-width: 740px;
+    width: 100%; }
+    .nw-mobile-site__img:first-child {
+      z-index: 10; }
+    .nw-mobile-site__img:nth-child(2) {
+      z-index: 5;
+      top: 104px; }
+    .nw-mobile-site__img:nth-child(3) {
+      top: 212px; }
+
+.melting-pot-site {
+  position: absolute;
+  top: 115px;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  width: 45%; }
+  .melting-pot-site__img {
+    position: absolute;
+    max-width: 400px; }
+    .melting-pot-site__img:nth-child(1) {
+      left: 55px;
+      z-index: 100; }
+    .melting-pot-site__img:nth-child(2) {
+      left: 208px;
+      top: -67px;
+      z-index: 30; }
+    .melting-pot-site__img:nth-child(3) {
+      left: 369px;
+      top: -64px; }
+
 .gallery {
   list-style-type: none;
   margin-top: 0;
-  padding: 0;
+  padding: 100px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
   .gallery__item {
+    filter: grayscale(1);
     position: relative;
     display: flex;
     box-sizing: border-box;
@@ -307,11 +388,132 @@ h1.logo {
     background: #333;
     justify-content: center;
     align-items: center; }
+  .gallery__img {
+    width: 150px; }
+
+[class^="gallery__item--bg"] {
+  background-size: 100%; }
+
+.gallery__item--bg-pic {
+  background-image: url(../img/pic-bg.jpg); }
+
+.gallery__item--bg-edelson {
+  background-image: url(../img/edelson-bg.jpg); }
+
+.gallery__item--bg-smith {
+  background-image: url(../img/smith-bg.jpg); }
+
+.gallery__item--bg-riverline {
+  background-image: url(../img/riverline-bg.jpg); }
+
+.gallery__item--bg-opinionlab {
+  background-image: url(../img/opinionlab-bg.jpg); }
+
+.gallery__item--bg-dupage {
+  background-image: url(../img/dupage-bg.jpg); }
+
+.gallery__item--bg-cubii {
+  background-image: url(../img/cubii-bg.jpg); }
+
+.gallery__item--bg-cvs {
+  background-image: url(../img/cvs-bg.jpg); }
+
+.gallery__item--bg-first-ib {
+  background-image: url(../img/first-ib-bg.jpg); }
+
+.gallery__item--bg-goshena {
+  background-image: url(../img/goshena-bg.jpg); }
+
+.gallery__item--bg-special-olympics {
+  background-image: url(../img/special-olympics-bg.jpg); }
+
+.gallery__item--bg-delta {
+  background-image: url(../img/delta-bg.jpg); }
+
+.gallery__item--bg-smith {
+  background-image: url(../img/smith-bg.png); }
+.gallery__item--bg-riverline {
+  background-image: url(../img/riverline-bg.png); }
 
 .contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .contact h2 {
-    flex-basis: 100%; }
+    margin: 0;
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 30px; }
+  .contact .ghost-btn {
+    margin-left: 15px;
+    margin-right: 15px; }
+
+.footer-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.contact-info {
+  list-style-type: none;
+  font-family: "Brandon Medium"; }
+  .contact-info li {
+    font-size: 9px;
+    display: inline-block;
+    margin-right: 15px;
+    color: #595959;
+    letter-spacing: 2px; }
+    .contact-info li i {
+      margin-right: 7.5px; }
+
+.social-links {
+  margin: 0;
+  list-style-type: none; }
+  .social-links li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 14px; }
+    .social-links li a {
+      position: relative; }
+
+.icon {
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  color: #fff; }
+  .icon a {
+    text-decoration: none;
+    color: inherit; }
+  .icon--facebook {
+    background: #3B5998; }
+    .icon--facebook a {
+      top: 7px;
+      left: 11px; }
+  .icon--youtube {
+    background: #ff0000; }
+    .icon--youtube a {
+      top: 7px;
+      left: 7px; }
+  .icon--flickr {
+    background: lightgray; }
+    .icon--flickr a {
+      top: 7px;
+      left: 9px; }
+  .icon--twitter {
+    background: #1DA1F2; }
+    .icon--twitter a {
+      top: 8px;
+      left: 8px; }
+  .icon--linkedin {
+    background: #0077B5; }
+    .icon--linkedin a {
+      top: 6px;
+      left: 9px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

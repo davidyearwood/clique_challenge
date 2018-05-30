@@ -320,14 +320,17 @@ h1.logo {
     width: 100%; }
 
 .land-of-lincoln-laptop {
+  width: 45%;
+  height: 100%;
   padding: 0;
   margin: 0;
   position: absolute;
-  bottom: -37px;
-  right: -189px; }
+  top: 0;
+  right: 0; }
   .land-of-lincoln-laptop img {
-    max-width: 1000px;
-    width: 100%; }
+    position: absolute;
+    bottom: 0;
+    width: 970px; }
 
 .nw-mobile-site {
   padding: 0;

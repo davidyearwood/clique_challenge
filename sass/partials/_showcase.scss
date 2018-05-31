@@ -15,7 +15,7 @@
     }
 
     &--roche {
-        right: -7%; 
+        right: -3%; 
     }
 
     &--northwestern {
@@ -38,7 +38,7 @@
 // Roche
 .showcase__img--roche {
     position: absolute;
-    width: 450px;
+    width: 400px;
     &:nth-child(1) {
         bottom: 5%;
         z-index: 5;

@@ -412,7 +412,7 @@ li.phone-link {
   .showcase--melting-pot {
     top: 13.8554217%; }
   .showcase--roche {
-    right: -7%; }
+    right: -3%; }
   .showcase--northwestern {
     top: 7%; }
 
@@ -425,7 +425,7 @@ li.phone-link {
 
 .showcase__img--roche {
   position: absolute;
-  width: 450px; }
+  width: 400px; }
   .showcase__img--roche:nth-child(1) {
     bottom: 5%;
     z-index: 5; }

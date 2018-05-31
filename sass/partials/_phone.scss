@@ -1,10 +1,17 @@
-.phone-link {
+.phone-link { 
     font-family: $crimson-text; 
     margin-left: auto;
     color: #fff; 
 
     a {
+        
+        color: inherit;
         font-family: inherit; 
         text-decoration: none;
     }
+}
+
+li.phone-link {
+    position: absolute; 
+    right: 3.96226415%;
 }

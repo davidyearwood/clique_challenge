@@ -1,0 +1,15 @@
+// Contact Info
+.our-info {
+    list-style-type: none; 
+    font-family: map-get($brandon, semibold);
+    li {
+        font-size: 9px;
+        display: inline-block;
+        margin-right: 15px; 
+        color: #595959;
+        letter-spacing: 2px;
+        i {
+            margin-right: 7.5px;
+        }
+    }
+}

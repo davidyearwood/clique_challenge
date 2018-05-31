@@ -1,0 +1,13 @@
+.build-something {
+    color: #fff; 
+    h2 {
+        font-family: map-get($brandon, semibold);
+        letter-spacing: 3px; 
+        color: inherit;
+        display: inline-block;
+        padding-bottom: 10px;
+        font-weight: 400;
+        border-bottom: 2px solid #fff;
+        text-transform: uppercase;
+    }
+}

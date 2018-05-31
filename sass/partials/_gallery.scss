@@ -5,6 +5,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    &__links {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: none;
+        a {
+            text-decoration: none;
+            color: #fff;
+            i {
+                display: inline-block;
+                background: rgba(0, 0, 0, .5);
+                padding: 15px;
+                color: #fff;
+            }
+            &:hover {
+                text-decoration: none; 
+            }
+        }
+    }
     &__item {
         filter: grayscale(1);
         position: relative;
@@ -17,6 +36,13 @@
         background: #333;
         justify-content: center;
         align-items: center;
+        &:hover {
+            filter: grayscale(0);
+        }
+
+        &:hover .gallery__links {
+            display: block;
+        }
     }
     &__img {
         width: 150px;
@@ -27,22 +53,7 @@
     background-size: 100%;
 }
 
-
-$gallery-items: (
-    'pic', 
-    'edelson', 
-    'smith', 
-    'riverline', 
-    'opinionlab', 
-    'dupage', 
-    'cubii', 
-    'cvs', 
-    'first-ib', 
-    'goshena', 
-    'special-olympics',
-    'delta'
-);
-
+$gallery-items: ( 'pic', 'edelson', 'smith', 'riverline', 'opinionlab', 'dupage', 'cubii', 'cvs', 'first-ib', 'goshena', 'special-olympics', 'delta');
 @each $item in $gallery-items {
     .gallery__item--bg-#{$item} {
         background-image: url(../img/#{$item}-bg.jpg);

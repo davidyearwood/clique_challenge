@@ -1,14 +1,17 @@
 // Banner
+
 .banner {
-    position: relative; 
-    width: 100%; 
-    padding-bottom: 40px; 
+    position: relative;
+    width: 100%;
+    padding-bottom: 75px;
     &__header {
-        height: 150px; 
+        height: 150px;
         display: flex;
         flex-wrap: wrap;
     }
     &--building-img {
-        background: gray;
+        background-color: gray;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                          url(../img/building.jpg);
     }
 }

@@ -1,0 +1,164 @@
+.showcase {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    &__img {
+        position: absolute;
+    }
+
+    &--melting-pot {
+        top: 13.8554217%;
+    }
+
+    &--roche {
+        right: -7%; 
+    }
+
+    &--northwestern {
+        top: 7%; 
+    }
+}
+
+// Paylocity
+.showcase__img--paylocity {
+    &:nth-child(1) {
+        top: 9%;
+        z-index: 5;
+    }
+    &:nth-child(2) {
+        bottom: 0;
+        right: 11%;
+    }
+}
+
+// Roche
+.showcase__img--roche {
+    position: absolute;
+    width: 450px;
+    &:nth-child(1) {
+        bottom: 5%;
+        z-index: 5;
+    }
+    &:nth-child(2) {
+        bottom: 5%;
+        left: 30%;
+    }
+}
+
+// Pritzker 
+.showcase__img--pritzker {
+    position: absolute;
+    width: 500px;
+    &:nth-child(1) {
+        left: 62%;
+        top: 3%;
+        width: 400px;
+    }
+    &:nth-child(2) {
+        top: 10%;
+        left: 39%;
+        z-index: 7;
+    }
+    &:nth-child(3) {
+        z-index: 6;
+        width: 700px;
+        top: 16%;
+        left: 16%;
+    }
+    &:nth-child(4) {
+        z-index: 5;
+        top: 32%;
+        left: 16%;
+    }
+    &:nth-child(5) {
+        top: 50%;
+    }
+}
+
+// Aba
+.showcase__img--aba {
+    width: 450px;
+    &:nth-child(1) {
+        top: 17%;
+    }
+    &:nth-child(2) {
+        z-index: 5;
+        top: 10%;
+        left: 17%;
+    }
+    &:nth-child(3) {
+        right: 0;
+        z-index: 10;
+    }
+}
+
+// authe
+.showcase__img--authe {
+    &:nth-child(1) {
+        top: 18%;
+    }
+    &:nth-child(2) {
+        top: 84%;
+    }
+    &:nth-child(3) {
+        top: 23%;
+        left: 19%;
+        width: 746px;
+    }
+}
+
+.showcase__img--melting-pot {
+    width: 400px;
+    &:nth-child(1){
+        left: 8.48765432%; 
+        z-index: 100; 
+    }
+    &:nth-child(2){
+        left: 32.098765432%; 
+        bottom: 38%; 
+        z-index: 30; 
+    }
+    &:nth-child(3){
+        left: 56.944444444%; 
+        bottom: 46%; 
+    }
+}
+
+.showcase__img--northwestern {
+    width: 740px;
+    right: -8%; 
+    &:first-child {
+        z-index: 10;
+    }
+    &:nth-child(2) {
+        z-index: 5;
+        top: 12.951432129%;
+    }
+    &:nth-child(3) {
+        top: 26.400996264%;
+    }
+}
+
+.showcase__img--lincoln {
+    width: 970px; 
+    bottom: 0;
+}
+
+.showcase__img--kendall {
+    &:nth-child(1) {
+        width: 400px;
+        bottom: -18%;
+        left: 7%;
+        transform: rotate(-20deg);
+    }
+    &:nth-child(2) {
+        right: 10%;
+        top: 35%;
+        width: 200px;
+        transform: rotate(10deg);
+    }
+}
